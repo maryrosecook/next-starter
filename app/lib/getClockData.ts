@@ -1,4 +1,7 @@
-import { AmOrPm } from "./clock";
+export enum AmOrPm {
+  AM = "am",
+  PM = "pm",
+}
 
 export function getClockData(date: Date) {
   const hours24 = date.getHours();

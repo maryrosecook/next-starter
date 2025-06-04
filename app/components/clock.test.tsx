@@ -1,6 +1,7 @@
-import { expect, it, test } from "vitest";
+import { expect, test } from "vitest";
 import { render, screen, within } from "@testing-library/react";
-import { AmOrPm, Clock } from "../app/clock";
+import { Clock } from "./clock";
+import { AmOrPm } from "../lib/getClockData";
 
 test("renders hours, minutes and am/pm", async () => {
   render(<Clock hours={11} minutes={12} seconds={13} amOrPm={AmOrPm.AM} />);

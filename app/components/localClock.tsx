@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Clock } from "./clock";
-import { getClockData } from "./getClockData";
+import { getClockData } from "../lib/getClockData";
 
 export function LocalClock() {
   const [intervalId, setIntervalId] = useState<NodeJS.Timeout | undefined>(

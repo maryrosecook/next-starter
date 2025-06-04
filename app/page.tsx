@@ -2,7 +2,7 @@
 
 import "../styles/globals.css";
 
-import { LocalClock } from "./localClock";
+import { LocalClock } from "./components/localClock";
 
 export default function Page() {
   return <LocalClock />;

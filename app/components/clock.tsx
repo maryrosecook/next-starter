@@ -1,7 +1,4 @@
-export enum AmOrPm {
-  AM = "am",
-  PM = "pm",
-}
+import { AmOrPm } from "../lib/getClockData";
 
 function toPaddedSingleDigitNumber(number: number) {
   return number.toString().padStart(2, "0");
