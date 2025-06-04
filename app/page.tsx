@@ -1,9 +1,12 @@
 "use client";
 
 import "../styles/globals.css";
-
-import { LocalClock } from "./components/localClock";
+import { Hello } from "./components/Hello";
 
 export default function Page() {
-  return <LocalClock />;
+  return (
+    <div className="p-1">
+      <Hello />
+    </div>
+  );
 }
