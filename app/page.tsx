@@ -1,7 +1,9 @@
-export const metadata = {
-  title: "App Router",
-};
+"use client";
+
+import "../styles/globals.css";
+
+import { LocalClock } from "./localClock";
 
 export default function Page() {
-  return <h1>App Router</h1>;
+  return <LocalClock />;
 }
