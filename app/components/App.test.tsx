@@ -1,9 +1,9 @@
 import { expect, it } from "vitest";
 import { render, screen, within } from "@testing-library/react";
-import { Hello } from "./Hello";
+import { App } from "./App";
 
 it("renders hello", async () => {
-  render(<Hello />);
+  render(<App />);
 
   const hours = within(screen.getByTestId("hello"));
   expect(hours.getByText("Hello")).toBeDefined();
